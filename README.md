@@ -1,10 +1,11 @@
 # KnobDeck
 
-A Stream-Deck-style controller for the **Espressif ESP32-C3-LCDkit** (round 1.28" screen + rotary knob).
+A Stream-Deck-style controller for the **[Espressif ESP32-C3-LCDkit](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp32-c3-lcdkit/user_guide.html)** (round 1.28" screen + rotary knob).
 
 Up to 8 tiles sit in a ring around the round screen. **Turn** the knob to pick one, **press** to run it,
 **hold** to go back. A small app on your PC (**Windows or Linux**) runs the actions and has a settings window
 where you build the pages.
+<img width="3000" height="4000" alt="20261116_232248" src="https://github.com/user-attachments/assets/297a501d-eb3a-4347-adb5-464db6bddb00" />
 
 ```
 knobdeck/
