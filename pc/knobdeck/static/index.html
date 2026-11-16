@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KnobDeck</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style.css">
+<script>window.KD_TOKEN = "__TOKEN__";</script>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo"></span>KnobDeck</div>
+  <div id="devstatus" class="pill"><span class="dot"></span><span id="devtext">Looking for the deck...</span></div>
+  <div class="spacer"></div>
+  <span id="dirty" class="muted"></span>
+  <button id="revert" class="ghost" disabled>Revert</button>
+  <button id="save" class="primary" disabled>Save to deck</button>
+</header>
+
+<main>
+  <aside class="pages">
+    <div class="section-title">Pages</div>
+    <ul id="pagelist"></ul>
+    <button id="addpage" class="ghost wide">+ Add page</button>
+    <div id="pageedit" class="card">
+      <label>Page name <input id="pagetitle" maxlength="31"></label>
+      <div class="row">
+        <button id="showpage" class="ghost small" title="Switch the deck to this page">Show on deck</button>
+        <button id="delpage" class="danger small">Delete page</button>
+      </div>
+    </div>
+    <p class="hint">Drag a tile onto another page to move it there.</p>
+  </aside>
+
+  <section class="stage">
+    <div id="deck" class="deck">
+      <div class="center">
+        <div id="c-title" class="c-title"></div>
+        <div id="c-icon" class="c-icon"></div>
+        <div id="c-label" class="c-label"></div>
+      </div>
+    </div>
+    <p class="hint center-text">Click a slot to edit it &middot; drag tiles to rearrange &middot; on the deck: turn to select,
+      press to run, hold to go back</p>
+  </section>
+
+  <aside class="editor">
+    <nav class="tabs">
+      <button data-tab="tile" class="active">Tile</button>
+      <button data-tab="device">Device</button>
+      <button data-tab="plugins">Plugins</button>
+    </nav>
+    <div id="tab-tile" class="tab"></div>
+    <div id="tab-device" class="tab hidden"></div>
+    <div id="tab-plugins" class="tab hidden"></div>
+  </aside>
+</main>
+
+<div id="toast" class="toast hidden"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
