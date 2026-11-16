@@ -1,0 +1,10 @@
+pyserial>=3.5
+Pillow>=10
+psutil>=5.9
+pystray>=0.19
+esptool>=4.7                                         # firmware updates from the settings window
+obsws-python>=1.7                                    # OBS Studio websocket (v5)
+nvidia-ml-py>=12                                     # NVIDIA GPU load/temperature (optional)
+pycaw>=20240316; sys_platform == "win32"             # Windows audio: volume + microphone mute
+comtypes>=1.4; sys_platform == "win32"
+pulsectl>=24.0; sys_platform == "linux"              # Linux audio (PulseAudio / PipeWire)

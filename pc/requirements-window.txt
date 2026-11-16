@@ -1,0 +1,1 @@
+pywebview>=5.0          # own settings window; without it the settings open in your browser
