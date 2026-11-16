@@ -1,0 +1,6 @@
+dependencies:
+  idf: ">=5.3"
+  espressif/esp32_c3_lcdkit: "^2.1.0"
+  lvgl/lvgl: ">=9.3.0,<10.0.0"
+  espressif/led_strip: "^3.0.0"
+  espressif/esp_codec_dev: "~1.5"
